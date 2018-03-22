@@ -1,0 +1,203 @@
+body {
+  padding-top: 54px;
+  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Roboto', sans-serif;  */
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.business-header {
+  height: 500px;
+  min-height: 400px;
+  background-attachment: fixed;
+  background: url('https://cdn.pixabay.com/photo/2016/10/30/21/51/village-1784455_960_720.jpg') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  border-bottom: 8px solid #d5a600;
+  padding: 160px 40px;
+}
+
+@media (max-width:768px){
+  .business-header{
+    height: 685px;
+    padding: 100px 10px;
+  }
+}
+
+.txt-yellow{
+  color: #d5a600;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
+
+.card {
+  height: 100%;
+}
+
+.navbar{
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 3px #ccc;
+  -moz-box-shadow: 0px 0px 3px #ccc;
+  -o-box-shadow: 0px 0px 3px #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+}
+
+.navbar-brand img{
+  max-width: 150px;
+}
+
+.filter{
+  /*position: relative;
+  top: 250px;*/
+  background: rgba(15, 15, 15, .7);
+  padding: 40px;
+}
+
+.custom-select{
+  color: #888;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0px;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #2c3e50;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #fff;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #d5a600;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.inputfilter{
+  padding: 11px;
+  border: none;
+  border-radius: 0px;
+}
+
+.btn-yellow{
+  padding: 10px;
+  border-radius: 0px;
+  background: #d5a600;
+  border-color: #d5a600;
+}
+
+.details{
+  background: #d5a600;
+  color: #fff;
+  padding: 5px;
+  height: 30px;
+}
+
+.details .col-md-4{
+  text-align: center!important;
+}
+
+.pdtb20{
+  padding: 80px 0px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.prev{
+  padding:12px 20px;
+  background: rgba(15, 15, 15, .7);
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  z-index: 999;
+  border-radius: 50px;
+}
+
+.next{
+  padding:12px 20px;
+  background: rgba(15, 15, 15, .7);
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  z-index: 999;
+  border-radius: 50px;
+}
+
+.relative{
+  position: relative;
+}
+
+.next i,.prev i{
+  color: #fff;
+}
