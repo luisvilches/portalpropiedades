@@ -60,37 +60,40 @@
                   </div>
                   <div class="col-md-2">
                       <div class="select">
-                          <select name="sources" class="custom-select sources" placeholder="Source Type">
+                          <select name="sources" id="venta" class="custom-select sources" placeholder="Source Type">
                               <option value="Venta">Venta</option>
+                              <option value="Arriendo">Arriendo</option>
                           </select>
                       </div>
                   </div>
                   <div class="col-md-2">
                       <div class="select">
-                          <select name="sources" class="custom-select sources" placeholder="Source Type">
+                          <select name="sources" id="tipo" class="custom-select sources" placeholder="Source Type">
                               <option value="Tipo">Tipo</option>
+                              <option value="Casa">Casa</option>
+                              <option value="Departanmento">Departanmento</option>
                           </select>
                       </div>
                   </div>
                   <div class="col-md-2">
                       <div class="select">
-                          <select name="sources" class="custom-select sources" placeholder="Source Type">
+                          <select name="sources" class="custom-select sources" id="regiones" placeholder="Source Type">
                               <option value="Region">Región</option>
                           </select>
                       </div>
                   </div>
                   <div class="col-md-2">
                       <div class="select">
-                          <select name="sources" class="custom-select sources" placeholder="Source Type">
+                          <select name="sources" id="comunas" class="custom-select sources" placeholder="Source Type">
                               <option value="Comuna">Comuna</option>
                           </select>
                       </div>
                   </div>
                   <div class="col-md-2">
-                      <input type="text" class="form-control inputfilter" placeholder="Codigo">
+                      <input type="text" id="codigo" class="form-control inputfilter" placeholder="Codigo">
                   </div>
                   <div class="col-md-2">
-                      <button class="btn btn-warning form-control btn-yellow">Buscar</button>
+                      <button id="filter" class="btn btn-warning form-control btn-yellow">Buscar</button>
                   </div>
               </div>
           </div>
@@ -98,7 +101,7 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container pdtb20">
+    <div class="container pdtb20 swiperIndex">
 
       <div class="row">
         <div class="col-sm-8">
@@ -113,28 +116,28 @@
               <!-- Slides -->
               <div class="swiper-slide">
                   <div class="card">
-                      <img class="card-img-top" src="http://www.schumacherpropiedades.com/assets/img/propiedades/17393_IMG_7946_20180213114142.jpg" alt="">
-                      <div class="details">
-                          <div class="row">
-                              <div class="col-md-4">
-                                  <span><i class="fas fa-bed"></i> </span><span>3</span>
-                              </div>
-                              <div class="col-md-4">
-                                  <span><i class="fas fa-bath"></i> </span><span>2</span>
-                              </div>
-                              <div class="col-md-4">
-                                <span>55</span><span> m2</span>
-                              </div>
-                          </div>
+                    <img class="card-img-top" src="http://www.schumacherpropiedades.com/assets/img/propiedades/17393_IMG_7946_20180213114142.jpg" alt="">
+                    <div class="details">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <span><i class="fas fa-bed"></i> </span><span>3</span>
+                            </div>
+                            <div class="col-md-4">
+                                <span><i class="fas fa-bath"></i> </span><span>2</span>
+                            </div>
+                            <div class="col-md-4">
+                              <span>55</span><span> m2</span>
+                            </div>
                         </div>
-                      <div class="card-body">
-                        <h4 class="card-title">Casa en Peñalolén</h4>
-                        <p class="card-text">Casa sector Antipurén Alto, con características de condominio (pasaje cerrado), muy segura, cercana a colegios y supermercados.</p>
                       </div>
-                      <div class="card-footer">
-                        <a href="#" class="txt-yellow text-right">Ver Mas</a>
-                      </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Casa en Peñalolén</h4>
+                      <p class="card-text">Casa sector Antipurén Alto, con características de condominio (pasaje cerrado), muy segura, cercana a colegios y supermercados.</p>
                     </div>
+                    <div class="card-footer">
+                      <a href="#" class="txt-yellow text-right">Ver Mas</a>
+                    </div>
+                  </div>
               </div>
           </div>
           <div class="prev"><i class="fa fa-chevron-left"></i></div>
@@ -160,8 +163,12 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.esm.js"></script>
+    <script src="js/scrollNav.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/coder.js"></script>
+    <script src="js/regiones.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/init.js"></script>
   </body>
 
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resultados</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ficha.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container top">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="titulo"></h1>
+                <span><span id="transa"></span><h2 class="text-left" id="price"></h2></span>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="galeria"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center">Contactanos</h3>
+                <br>
+                <form action="">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Teléfono</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo Eléctronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo Eléctronico">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Mensaje</label>
+                        <textarea name="msg" id="" cols="30" rows="10" class="form-control" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning form-control">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container top2">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 box">
+                        <h3>Descripción:</h3>
+                        <p id="description"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Codígo: <span id="cod"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>m2 Útiles: <span id="meter"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Dormitorios: <span id="dorm"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Precio: <span id="price"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>m2 Totales: <span id="meters"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Baños: <span id="banos"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+            </div>
+            <!-- /.container -->
+          </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+    <script src="js/scrollNav.js"></script>
+    <script src="js/coder.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/ficha.js"></script>
+    <script src="js/mainFicha.js"></script>
+</body>
+</html>
