@@ -5,7 +5,7 @@ var galeria = document.getElementById("galeria");
 var cod = document.getElementById("cod");
 var m2 = document.getElementById("meter");
 var dormitorios = document.getElementById("dorm");
-var precio = document.getElementById("price");
+var precio = document.getElementById("precio");
 var metersTotal = document.getElementById("meters");
 var banos = document.getElementById("banos");
 var desc = document.getElementById("description");
@@ -22,6 +22,7 @@ function llenarFicha(o){
     metersTotal.innerText = o.metrosTotales;
     banos.innerText = o.banos;
     desc.innerText = o.description;
+    precio.innerText = o.price + " UF";
 }
 
 function loadGaleria(imagenes){

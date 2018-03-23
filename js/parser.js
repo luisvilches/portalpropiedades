@@ -84,3 +84,37 @@ function pagToPag(pag,totals,items){
     actual.innerText = pag;
     total.innerText = totals;
 }
+
+function parserData(arr){
+    arr.forEach(obj => {
+        var tmp = `<div class="card">
+            <img class="card-img-top" src="${obj.cover}" alt="">
+            <div class="details">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span><i class="fas fa-bed"></i> </span><span>${obj.dormitorios}</span>
+                    </div>
+                    <div class="col-md-4">
+                        <span><i class="fas fa-bath"></i> </span><span>${obj.banos}</span>
+                    </div>
+                    <div class="col-md-4">
+                        <span>${obj.meters}</span><span> m2</span>
+                    </div>
+                </div>
+                </div>
+            <div class="card-body">
+                <h4 class="card-title">${obj.titulo}</h4>
+                <p class="card-text">${obj.description}</p>
+            </div>
+            <div class="card-footer">
+                <a href="ficha.html?cod=${obj.codigo}" class="txt-yellow text-right">Ver Mas</a>
+            </div>
+        </div>`;
+
+        var md4 = document.createElement("div");
+        md4.classList = "col-md-4";
+        md4.innerHTML = tmp;
+        document.getElementById("resultados").appendChild(md4);
+    });
+
+}

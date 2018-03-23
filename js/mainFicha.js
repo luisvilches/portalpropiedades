@@ -17,11 +17,4 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     loadSwiperGallery();
-})
-
-cod.innerText = o.codigo
-    m2.innerText = o.metrosUtiles
-    dormitorios.innerText = o.dormitorios
-    precio.innerText = o.precio
-    metersTotal.innerText = o.metrosTotales
-    banos.innerText = o.banos
+});

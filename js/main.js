@@ -51,3 +51,37 @@ function saveSessionStorage(q,a,b,c,d){
         window.location.href = "resultado.html?code=" + a.toLowerCase();
     }
 }
+
+
+function poblarSlider(arr){
+    arr.forEach(function(i){
+        var tmp = `<div class="card">
+        <img class="card-img-top" src="${i.cover}" alt="">
+        <div class="details">
+            <div class="row">
+                <div class="col-md-4">
+                    <span><i class="fas fa-bed"></i> </span><span>${i.dormitorios}</span>
+                </div>
+                <div class="col-md-4">
+                    <span><i class="fas fa-bath"></i> </span><span>${i.banos}</span>
+                </div>
+                <div class="col-md-4">
+                  <span>${i.meters}</span><span> m2</span>
+                </div>
+            </div>
+          </div>
+        <div class="card-body">
+          <h4 class="card-title text-left">${i.title}</h4>
+          <p class="card-text text-left">${i.estracto}</p>
+        </div>
+        <div class="card-footer">
+          <a href="ficha.html?cod=${i.code}" class="txt-yellow text-left">Ver Mas</a>
+        </div>
+      </div>`;
+
+      let container = document.createElement("div");
+      container.classList = "swiper-slide";
+      container.innerHTML = tmp;
+      document.getElementById("sliderContainer").appendChild(container);
+    })
+}

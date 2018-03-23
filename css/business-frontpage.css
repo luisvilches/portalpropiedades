@@ -150,7 +150,7 @@ select::-ms-expand {
   background: #d5a600;
   color: #fff;
   padding: 5px;
-  height: 30px;
+  /*height: 30px;*/
 }
 
 .details .col-md-4{
@@ -214,4 +214,9 @@ select::-ms-expand {
 
 .top{
   margin-top: 150px;
+}
+
+
+.card img{
+  min-height: 250px;
 }
