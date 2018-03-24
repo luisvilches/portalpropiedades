@@ -26,12 +26,19 @@ function llenarFicha(o){
 }
 
 function loadGaleria(imagenes){
-    imagenes.forEach(element => {
+    if(imagenes.length == 0){
         let img = document.createElement("div");
         img.classList = "swiper-slide";
-        img.style.backgroundImage = "url(" + element + ")";
+        img.style.backgroundImage = "url(https://images.racc.es/static/foto-no-disponible.jpg)";
         galeria.appendChild(img);
-    });
+    } else {
+        imagenes.forEach(element => {
+            let img = document.createElement("div");
+            img.classList = "swiper-slide";
+            img.style.backgroundImage = "url(" + element + ")";
+            galeria.appendChild(img);
+        });
+    }
 }
 
 function loadSwiperGallery(){

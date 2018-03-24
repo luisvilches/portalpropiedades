@@ -39,3 +39,9 @@ h1{
   .top2{
       margin-top:50px; 
   }
+
+  .swiper-slide{
+    background-repeat: no-repeat!important;
+    background-size: cover;
+    background-position: center;
+  }

@@ -220,3 +220,18 @@ select::-ms-expand {
 .card img{
   min-height: 250px;
 }
+
+.page-item.active .page-link{
+  background: #d5a600;
+  border-color: #d5a600;
+}
+
+
+
+@media (min-width:768px){
+  .card-body{
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+  }
+}

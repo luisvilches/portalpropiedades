@@ -1,20 +1,24 @@
+var server = "http://localhost:5000";
+
 document.addEventListener("DOMContentLoaded", function(){
-    let title = "Departamento de 2D y 1B Santiago";
-    let price = "2.350";
-    let desc = "Casa sector Antipurén Alto, con características de condominio (pasaje cerrado), muy segura, cercana a colegios y supermercados.";
-    llenarFicha({
-        title:title,
-        price:price,
-        transa: "venta",
-        codigo:"ODP3040",
-        metrosUtiles: "44",
-        dormitorios: "2",
-        metrosTotales:"44.29",
-        banos: "1",
-        description:desc,
-        imagenes:["http://deplanos.com/wp-content/uploads/2016/08/Casa.jpeg","http://gpi-blog.s3.amazonaws.com/wp-content/uploads/2014/03/casa.jpg"]
-    });
-
-
-    loadSwiperGallery();
+    fetch(server + "/ficha/" + getParameterByName("cod"))
+    .then(res => res.json())
+    .then(response => {
+        console.log(response);
+        llenarFicha({
+            title:response.data.title,
+            price:response.data.price,
+            transa:response.data.transa,
+            codigo:response.data.code,
+            metrosUtiles: response.data.metersUtils,
+            dormitorios: response.data.dormitorios,
+            metrosTotales:response.data.meters,
+            banos: response.data.banos,
+            description:response.data.description,
+            imagenes:response.data.images
+        });
+    
+    
+        loadSwiperGallery();
+    })
 });

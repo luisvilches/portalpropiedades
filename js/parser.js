@@ -7,7 +7,7 @@ function getParameterByName(name) {
 
 function getSessionParser(str){
     str = Base64.decode(str).split(",");
-    return {venta: str[0],tipo:str[1],region:str[2],comuna:str[3]};
+    return {transa: str[0],type:str[1],region:str[2],comuna:str[3]};
 }
 
 function getSessionStorage(){
@@ -28,6 +28,7 @@ function activePagination(num){
 
 
 function createPagination(total){
+    total = parseInt(total);
     var ul = document.querySelector("#pagination");
     let prev = document.createElement("li");
     prev.classList = "page-item";
@@ -103,11 +104,11 @@ function parserData(arr){
                 </div>
                 </div>
             <div class="card-body">
-                <h4 class="card-title">${obj.titulo}</h4>
+                <h4 class="card-title">${obj.title}</h4>
                 <p class="card-text">${obj.description}</p>
             </div>
             <div class="card-footer">
-                <a href="ficha.html?cod=${obj.codigo}" class="txt-yellow text-right">Ver Mas</a>
+                <a href="ficha.html?cod=${obj.code}" class="txt-yellow text-right">Ver Mas</a>
             </div>
         </div>`;
 

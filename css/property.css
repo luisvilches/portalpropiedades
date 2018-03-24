@@ -1,0 +1,19 @@
+section.container {
+    margin-top: 40px;
+}
+
+tbody td img{
+    max-height: 40px;
+}
+
+tbody td{
+    padding: 20px !important;
+}
+
+.id{
+    padding-top: 30px !important;
+}
+
+.coverContainer img{
+    border-radius: 3px;
+}

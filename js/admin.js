@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     .then(res => res.json())
     .then(response => {
         cargarPropiedades(response.data);
+        console.log(response.data)
     })
 })
 

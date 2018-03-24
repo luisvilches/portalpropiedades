@@ -15,6 +15,7 @@ function poblarSelectRegiones(){
 
 
 function poblarSelectComunas(r){
+    selectComunas.innerHTML = "";
     let comunas = regiones.filter(function(e){
         if(e.region === r){
             return e;
